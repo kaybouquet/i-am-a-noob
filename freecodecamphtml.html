@@ -1,0 +1,805 @@
+<h1>Hello World</h1>
+<!-- this is an opening/closing tag
+run tests (ctrl + enter)
+-->
+<h2>CatPhotoApp</h2>
+<!-- this is smaller than h1 element
+there are also h3, h4, h5, and h6 elements
+p elements are the preferred element for normal-sized paragraph
+text on websites. P is short for "paragraph"
+-->
+<p>Hello Paragraph. I'm a p tag!</p>
+<p>Kitty ipsum dolor sit amet, shed
+  everywhere shed everywhere stretching attack
+  your ankles chase the red dot, hairball run
+  catnip eat the grass sniff.</p>
+  <!-- placeholder text lorem ipsum dolor text -->
+  <h2 style ="color:red">CatPhotoApp</h2>
+<!-- inline style
+CSS - Cascading Style Sheets -->
+
+
+<style>
+  h2 {
+    color: blue;
+    }
+</style>
+
+<h2>CatPhotoApp</h2>
+
+<p> blah blah blah </p>
+
+<!-- line break -->
+
+<style>
+  .red-text {
+    color: red;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>blah blah blah</p>
+
+<!-- you can attach classes to HTML elements by using
+class="your-class-here"
+only CatPhotoApp is red
+-->
+
+<p class="red-text">Kitty ipsum dolor sit amet, shed everywhere
+  shed everywhere stretching attack your ankles chase the red dot,
+  hairball run catnip eat the grass sniff.</p>
+
+<!-- makes everything else red, like the paragraph -->>
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"
+type="text/css">
+
+<img src="https://bit.ly/fcc-relaxing-cat">
+
+<style>
+  .smaller-image {
+    width: 100px;
+  }
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  h2 {
+    font-family: Lobster;
+  }
+</style>
+
+<img class="smaller-image">
+
+<!-- Monospace, Sans-Serif, Serif
+If you wanted an element to use the Helvetica font,
+but also degrade to the Sans-Serif font when Helvetica wasn't
+available, you could use the CSS style -->
+p {
+  font-family; Helvetica, Sans-Serif;
+}
+
+<img class="thick-green-border">
+
+<style>
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px;
+}
+</style>
+
+<!-- border radius rounds out the corners
+border-radius can also be set as a percentage
+e.g. border-radius: 50%;
+-->
+
+<!-- a elements also known as anchor elements, are used to link to content
+outside of the current page -->
+
+<p>Here's a
+  <a href="http://freecodecamp.com">
+    link to a Free Code Camp.com
+  </a>
+  for you to follow.</p>
+
+  <a href="http://freecatphotoapp.com">
+  cat photos</a>
+
+  <!-- nesting means putting one element inside of another element -->
+
+<p> View more
+<a href="http://www.freecatphotoapp.com">cat photos</a>
+</p>
+
+<!-- replace the value of the a element's href attribute with a #,
+AKA a hash symbol, to turn it into a dead link.
+This is because sometimes you want to add a elements to your websites
+before you know where they will link -->
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+<p>Click here for <a href="#"> <img class="smaller-image thick-green-border"
+src="https://bit.ly/fcc-relaxing-cat"></a>.</p>
+
+<!-- alt attributes/alt texts are what browsers display if they fail
+to load the image. alt attributes are impt for blind/visually impaired
+users to understand what an image portrays. Every image should have
+an alt attribute -->
+
+<a href="#"><img class="smaller-image thick-green-border"
+  src="https://bit.ly/fcc-relaxing-cat"
+  alt="A cute orange cat lying on its back"></a>
+
+<!-- unordered lists or bullet point-style lists
+unordered lists start with a <ul> element. Then they contain some
+number of <li> elements
+
+ordered lists or numbered-style lists start with a <ol> element
+then they contain some number of <li> elements
+-->
+
+<ul>
+    <li>milk</li>
+    <li>cheese</li>
+    </ul>
+
+<ol>
+  <li>Garfield</li>
+  <li>Sylvester</li>
+</ol>
+
+<!-- text inputs to get input from yor user
+<input type="text">
+you can create placeholder text
+<input type="text"
+placeholder="this is placeholder text">
+-->
+
+<div>
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+</div>
+<input type="text" placeholder="cat photo URL">
+
+<!-- div element AKA division element, is a general purpose container
+for other elements. It's useful for passing CSS of its own class
+declarations down to all the elements that it contains -->
+
+<!-- you can build web forms that actually submit data to
+a server using nothing more than pure HTML. You can do this
+by specifying an action on your form element
+
+for example:
+<form action="/url-where-you-want-to-submit-form-data"></form>
+-->
+
+<form action="/submit-cat-photo">
+  <input type="text" placeholder="cat photo URL"required>
+  <button type="submit">Submit</button>
+</form>
+
+<!-- require specific form fields so that your user will
+not be able to submit your form until he or she has filled them out
+if you wanted to make your text input field required, y9u can just
+add the word required within your input element -->
+
+<label><input type="radio"name="indoor-outdoor">Indoor</label>
+<label><input type="radio"name="indoor-outdoor">Outdoor</label>
+
+<!-- you can use radio buttons for questions where you want the user
+to only give you one answer. Radio buttons are a type of input. Each of
+your radio buttons should be nested within its own label element.
+All related radio buttons should have the same name attribute -->
+
+<label><input type="checkbox" name="personality"> Loving</label>
+
+<!-- checkboxes are for questions that may have more than 1 answer.
+Checkboxes are a type of input. Each of your checkboxes should be
+nested within its own label element. All related checkbox inputs
+should have the same name attribute -->
+
+<input type="radio" name="test-name" checked>
+
+<!-- you can set a checkbox or radio button to be checked by default
+using the checked attribute. just add the word 'checked' to the inside
+of an input element -->
+
+<style>
+.green-background {
+  background-color: green;
+}
+</style>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form id="cat-photo-form">
+<h2 id="cat-photo-app">
+
+<!-- each html element can have an id attribute. id attributes should
+be unique. don't give more than one element the same id attribute -->
+
+<style>
+#cat-photo-form {
+   background-color: green;
+ }
+</style>
+
+<!-- id attributes, like classes, can be styled. inside your style element,
+you always reference classes by putting a . in front of their names. You
+always reference ids by putting a # in front of their names -->
+
+
+
+
+
+<!-- here it is in all its glory -->
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  #cat-photo-form {
+    background-color: green;
+  }
+
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .gray-background {
+    background-color: gray;
+  }
+</style>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="#">cat photos</a>.</p>
+
+<a href="#"><img class="smaller-image thick-green-border" alt="A cute orange cat lying on its back" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+<div class="gray-background">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+
+<form action="/submit-cat-photo" id="cat-photo-form">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+<!-- 3 properties control the space that surrounds
+each HTML element: padding, margin, and border.
+
+An element's padding controls the amount of space
+between the element and its border.
+
+An element's margin controls the amount of space between an element's
+border and surrounding elements. If you set an element's margin
+to a negative value, the element will grow larger.
+
+CSS allows you to control the padding of an element on all four sides
+with padding-top, padding-right, padding-bottom, and padding-left properties.
+
+CSS allows you to control the margin of an element on all four sides with
+margin-top, margin-right, margin-bottom, and margin-left properties.
+-->
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: red;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+
+  .green-box {
+    background-color: green;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+
+<!-- Instead of specifying an element's padding-top, padding-right,
+padding-bottom, and padding-left properties, you can specify them all in
+one line, like this:
+padding: 10px 20px 10px 20px;
+
+These four values work like a clock: top, right, bottom, left,
+and will produce the exact same result as using the side-specific padding
+instructions.
+
+Same way works for margin except
+margin: 10px 20px 10px 20px;
+
+-->
+
+<style>
+  body {
+    background-color: black;
+  }
+
+</style>
+
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
+
+<!-- pink-text h1 class overrode the body element's of CSS declaration!
+Applying multiple class attributes to a HTML element is done with a
+space between them like this:
+class="class1 class2"
+
+It doesn't matter which order the classes are listed in the HTML element.
+However, the order of the class declarations in the <style> section are
+what is important. The second declaration will always take precedence
+over the first.
+
+-->
+<style>
+  body {
+    background-color: black;
+    font-family: Monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+
+<!-- id declarations override class declarations, regardless of where
+they are declare in your style element CSS -->
+
+<h1 style="color: green">
+<h1 id="orange-text" class="pink-text blue-text"
+style="color: white">Hello World!</h1>
+
+<!-- in-line styles )white) will override all CSS declarations in your
+style element
+
+In many situations, you will use CSS libraries. These may accidentally
+override your own CSS. So when you absolutely need to be sure that an
+element has specific CSS, you can use !important
+
+-->
+<style>
+.pink-text {
+    color: pink !important;
+  }
+</style>
+
+<!-- represent color in CSS
+hexadecimal code/hex ode - uses base 16 numbers
+0-9 and A-F represent values 10-15
+
+0 is the lowest number in hex code, and represents a complete absence
+of color.
+
+F is the highest number in hex code, and it represents the
+maximum possible brightness.
+
+Hex code follows the red-green-blue, or rgb format. The first two digits
+of hex code represent the amount of red in the color. The third and fourth
+digit represent the amount of green. The fifth and sixth represent the
+amount of blue.
+
+Absolute brightest red - #FF0000
+Absolute brightest green - #00FF00
+Absolute brightest blue - #0000FF
+
+We can also create different shades of gray by evenly mixing all 3 colors.
+#808080
+We can also create other shades of gray by evenly mixing all three colors.
+We can go very close to true black. Dark gray #111111
+
+For example, red, which is #FF0000 in hex code, can be shortened to #F00.
+That is, one digit for red, one digit for green, one digit for blue.
+
+Another way you can represent colors in CSS is by using rgb values.
+The RGB value for black looks like this:
+rgb(0, 0, 0)
+
+The RGB value for white looks like this:
+rgb(255, 255, 255)
+
+specify number of brightness of each color w a number between 0 & 255
+Red rgb(255, 0, 0)
+Green rgb(0, 255, 0)
+Blue rgb(0, 0, 255)
+
+-->
+
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
+
+<style>
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+</style>
+
+<style>
+  body {
+    background-color: #000;
+  }
+</style>
+
+<!--  Bootstrap responsive CSS framework. Bootstrap will figure out how
+wide your screen is and respond by resizing your HTML elements
+- hence the name Responsive Design.
+
+With responsive design, there is no need to design a mobile version of
+your website. It will look good on devices with screens of any width.
+
+You can add Bootstrap to any app just by including it by adding the
+following code to the top of your HTML:
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+-->
+
+<div class="container-fluid"></div>
+<img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+
+<!-- class img-responsive makes the image exactly the width of whatever
+device you are looking at -->
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2></div>
+
+<!-- text-center -->
+
+  <button type="button" class="btn btn-block btn-primary">Like</button>
+
+<!-- block-level buttom element like btn-block fill up the whole screen
+btn-primary class is the main color you'll use in your app. It is useful
+for highlighting actions you want your user to take -->
+
+<button class="btn btn-block btn-primary">Like</button>
+<button class="btn btn-block btn-info">Info</button>
+<button class="btn btn-block btn-danger">Delete</button>
+
+<!--
+btn-info class is used to call attention to optional actions that the user
+can take
+
+btn-danger is the button color you'll use to notify users that the button
+performs a destructive action such as deleting a cat photo -->
+
+<!-- using a single set of .col-md-* (x being numbers) grid classes, you can
+create a basic grid system that starts out stacked on mobile devices and
+tablet devices (the extra small to small range) before becoming
+horizontal on desktop (medium) devices. Place grid columns in any .row
+
+md means medium, and * is a # specifying how many columns wide the element
+should be.
+
+col-xs-*, where xs means extra-small mobile phone screen and * is the #
+of columns specifying how many columns wide the element should be
+-->
+
+<div class="row">
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-primary">Like</button>
+  </div>
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-info">Info</button>
+  </div>
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-danger">Delete</button>
+  </div>
+</div>
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <h2 class="text-primary text-center">CatPhotoApp</h2>
+
+  <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+
+  <p>Things cats
+    <span class = "text-danger">love:</span>
+  </p>
+
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<!-- img-responsive added and text-primary
+deleted p, .red-text, .smaller-image CSS declarations from style element
+deleted p element that contains a dead link, removed red-text class from
+h2 element and replaced it with text-primary bootstprap class
+
+removed the smaller-image class from first img element and replaced with
+img-responsive class
+
+-->
+
+<!-- span element is when you can put several elements together and even style
+different parts of the same element differently
+span element has a span class of text-danger
+-->
+
+<!-- stacked to horizontal
+.col-md-1 can do that 12 times
+.col-md-8 + .col-md-4
+.col-md-4 + .col-md-4 + .col-md-4
+.col-md-6 + .col-md-6
+-->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Font awesome is a library of icons and can be vector graphics, stored
+in the .svg file format. These icons are treated just like fonts. You can specify
+their size using pixels, and they will assume the font size of the parent HTML
+elements.
+you can add Font Awesome to any app just by including it by adding the following
+code to the top of your HTML:
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+You can add the Font Awesome classes to the i element to turn it into an icon,
+for example:
+<i class="fa fa-info-circle"></i>
+-->
+
+</div>
+<img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+<div class="row">
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+  </div>
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+  </div>
+  <div class="col-xs-4">
+    <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i>Delete</button>
+  </div>
+</div>
+
+<div class="row">
+      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Indoor</label></div>
+      <div class="col-xs-6"><label><input type="radio" name="indoor-outdoor"> Outdoor</label></div>
+</div>
+
+<!-- Bootstrap's col-xs-* classes on form elements too!
+This way, the radio buttons would be evenly spread out across the page,
+regardless of how wide the sreen resolution is -->
+
+<button type="submit"><i class="fa fa-paper-plane"></i>Submit</button>
+<input type="text" class="form-control" placeholder="cat photo URL" required>
+<button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>
+Submit</button>
+
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat"></a>
+    </div>
+  </div>
+  <img src="http://bit.ly/fcc-running-cats" class="img-responsive">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+  </form>
+</div>
+
+    <div class="row">
+    <div class="col-xs-7"><input type="text" class="form-control" placeholder="cat photo URL" required></div>
+    <div class="col-xs-5"><button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button></div>
+</div>
